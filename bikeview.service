@@ -1,0 +1,16 @@
+[Unit]
+Description=BikeView server service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python /home/pi/lightsServer.py
+Restart=always
+RestartSec=1s
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=BikeView
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
