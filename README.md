@@ -1,1 +1,1 @@
-# bike-cam
+# BikeCam
